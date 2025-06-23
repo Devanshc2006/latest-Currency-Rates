@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latest Currency Rates</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💱 Latest Currency Exchange</h1>
+
+    <label for="baseCurrency">Base Currency:</label>
+    <select id="baseCurrency">
+      <option value="USD">USD - US Dollar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="INR">INR - Indian Rupee</option>
+      <option value="JPY">JPY - Japanese Yen</option>
+    </select>
+
+    <button onclick="getRates()">Get Latest Rates</button>
+
+    <div id="results"></div>
+    
+    <button id="viewMoreBtn" style="display:none;" onclick="showAllRates()">View Full Table</button>
+
+    <div id="fullTable" style="display:none;"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
